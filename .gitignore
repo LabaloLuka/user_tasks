@@ -5,3 +5,7 @@ node_modules/
 dist/
 build/
 
+# Postman files
+POSTMAN_TESTING_GUIDE.md
+Yettel_Test_API.postman_collection.json
+
