@@ -12,6 +12,7 @@ A REST API built with Express.js and MySQL for managing users and tasks with rol
 - **Sorting**: Sort tasks by newest or oldest
 - **Data Validation**: Input validation for all endpoints
 - **Unique Constraints**: Username and email uniqueness enforced
+- **API Documentation**: Interactive Swagger/OpenAPI documentation
 
 ## Prerequisites
 
@@ -65,6 +66,42 @@ A REST API built with Express.js and MySQL for managing users and tasks with rol
    ```
 
    The server will start on `http://localhost:3000` (or the port specified in your `.env` file).
+
+## API Documentation
+
+Interactive API documentation is available using Swagger/OpenAPI.
+
+### Access Swagger UI
+
+Once the server is running, visit:
+```
+http://localhost:3000/api-docs
+```
+
+### Features
+
+- **Interactive Testing**: Try out all endpoints directly from the browser
+- **Authentication**: Use the "Authorize" button to add your JWT token
+- **Request/Response Examples**: See example requests and responses for each endpoint
+- **Schema Definitions**: View detailed data models and validation rules
+
+### Using Swagger UI
+
+1. **Get Authentication Token**:
+   - Use the `/api/auth/register` or `/api/auth/login` endpoint
+   - Copy the `token` from the response
+
+2. **Authorize**:
+   - Click the "Authorize" button (top right)
+   - Enter: `Bearer <your-token>` (e.g., `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...`)
+   - Click "Authorize"
+
+3. **Test Endpoints**:
+   - Expand any endpoint
+   - Click "Try it out"
+   - Fill in the required parameters
+   - Click "Execute"
+   - View the response
 
 ## API Endpoints
 
